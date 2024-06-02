@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Background Flexível</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .bg {
+            /* The image used */
+            background-image: url('background.jpg');
+
+            /* Full height */
+            height: 100%; 
+
+            /* Make the background image contain the entire page */
+            background-size: contain;
+
+            /* Center the background image */
+            background-position: center;
+
+            /* Ensure the background image does not repeat */
+            background-repeat: no-repeat;
+
+            /* Fix the background image so it doesn't scroll with the page */
+            background-attachment: fixed;
+        }
+
+        /* Optional: Add some content at the center of the page */
+        .content {
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="content">
+        <!-- Bem-vindo à minha página com background flexível! -->
+    </div>
+</body>
+</html>
